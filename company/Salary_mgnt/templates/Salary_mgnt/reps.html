@@ -1,0 +1,26 @@
+<h1>This is salary reporting page of html</h1>
+
+<!-- {{ sall }}
+{{ salid }} -->
+
+{% for sal in sall %}
+
+    {% if salid == 1 %}
+
+        {{ sal.id }}
+        {{ sal.Name }}
+        {{ sal.Sal_23 }}
+
+    {% elif salid == 2 %}
+
+        {{ sal.id }}
+        {{ sal.Name }}
+        {{ sal.Sal_24 }}
+
+    {% endif %}
+
+{% endfor %}
+
+
+<a href="/reportpgs/1/">Sal 2023</a>
+<a href="/reportpgs/2/">Sal 2024</a>

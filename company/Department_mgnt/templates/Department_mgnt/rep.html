@@ -1,0 +1,31 @@
+<h1>This is heirarchical page of html</h1>
+
+{{ heir1 }}
+
+
+<br>
+<br>
+
+{% for k in heir1 %}
+
+    {% if heir_id == 1 %}
+
+        {{ k.id }}
+        {{ k.department }}
+        {{ k.manager }}
+        {{ k.employee }}
+
+    {% elif heir_id == 2 %}
+
+        {{ k.id }}
+        {{ k.department }}
+        {{ k.manager }}
+        {{ k.employee }}
+
+    {% endif %}
+
+{% endfor %}
+
+
+<a href="/heirpg/1/">Alex</a>
+<a href="/heirpg/2/">Mitesh</a>
